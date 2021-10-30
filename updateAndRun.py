@@ -22,7 +22,8 @@ class Flags:
     KILL = "--kill"
 
 SSH_ORIGIN = "ADD YOUR OWN SSH ORIGIN HERE"
-PULL_COMMAND = "git pull " + SSH_ORIGIN + " dev-custoskids"
+BRANCH_NAME = "ADD YOUR DEPLOY BRANCH HERE"
+PULL_COMMAND = "git pull " + SSH_ORIGIN + " " + BRANCH_NAME
 BUILD_COMMAND = "npm run build"
 KILL_COMMAND = "npm run daemon:kill"
 START_COMMAND = "npm run daemon:start"
